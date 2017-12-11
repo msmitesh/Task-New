@@ -31,11 +31,11 @@
             <ul class="nav navbar-nav">
                 <li><a href="#intro">Intro</a></li>
                 <li><a href="#about">About</a></li>
-                <li id="desktop-about"><a href="#work">My Work</a></li>
+                <li id="mobile-only"><a href="#work">My Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
+                <li class="dropdown" id="desktop-login">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <span class="glyphicon glyphicon-menu-hamburger"></span>
                     </a>
@@ -43,10 +43,10 @@
                         <div class=container-fluid>
                             <form id="login" action="#" method="get">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="E-Mail" name="email" id="email">
+                                    <input type="email" class="form-control" placeholder="E-Mail" name="email" id="email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Password" name="pwd" id="pwd">
+                                    <input type="password" class="form-control" placeholder="Password" name="pwd" id="pwd" required>
                                 </div>
                                 <a href="#">Forgot Password?</a>
                                 <p></p>
@@ -55,6 +55,22 @@
                             </form>
                         </div>
                     </ul>
+                </li>
+                <li id="mobile-login">
+                    <div class=container-fluid>
+                        <form id="login" action="#" method="get">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="E-Mail" name="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" name="pwd" id="pwd">
+                            </div>
+                            <a href="#">Forgot Password?</a>
+                            <p></p>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="button" class="btn btn-warning">Register</button>
+                        </form>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -86,7 +102,7 @@
     </section>
 
     <!-- Work -->
-    <section id="work" class="main style3 primary mobile-only">
+    <section id="work" class="main style3 primary desktop-only">
         <div class="content">
             <header>
                 <h2>My Work</h2>

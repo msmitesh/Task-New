@@ -2002,8 +2002,15 @@ body.is-touch .main {
         text-align: center;
         padding: 3em 10px 3em 10px;
     }
-    .mobile-only,
-    #desktop-about {
+    .desktop-only,
+    #desktop-login,
+    #mobile-only {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 736px) {
+    #mobile-login {
         display: none;
     }
 }
